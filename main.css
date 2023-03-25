@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #684bb1;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  background-image: url(images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-items: center;
+}
+.allin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo {
+  width: 120px;
+  margin-top: 38.2px;
+  margin-left: 40px;
+}
+.ilustracia {
+  width: 296px;
+  padding-top: 69.8px;
+}
+h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 24px;
+}
+.paragrapi {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 16px;
+}
+.register {
+  display: flex;
+  height: 40px;
+  width: 200px;
+  background: #ffffff;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.269022);
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+}
+.registerp {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #684bb1;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+}
+.text {
+  padding: 36px 36px 0 36px;
+}
+.fti_desktop {
+  display: none;
+}
+.socmedia{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 64px;
+  margin-bottom: 40px;
+}
+.fti_mobile{
+  display: flex;
+  gap: 10.86px;
+}
+
+
+
+@media screen and (min-width: 1440px) {
+  .main {
+    background-image: url(images/bg-desktop.svg);
+    flex-direction: row;
+  }
+  .logo {
+    width: 200px;
+    margin-top: 64px;
+    margin-left: 80px;
+  }
+  .ilustracia {
+    width: 696px;
+    padding-top: 104px;
+    padding-left: 80px;
+  }
+  .fti_mobile {
+    display: none;
+  }
+  .fti_desktop {
+    display: flex;
+    gap: 16px;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 60px;
+    padding-right: 118px;
+    text-align: left;
+  }
+  .paragrapi {
+    font-size: 18px;
+    line-height: 27px;
+    padding-right: 85px;
+    padding-top: 24px;
+    text-align: left;
+  }
+  .registerp {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .registerp:hover{
+    color: #FFFFFF;
+  }
+  .register {
+    height: 56px;
+    box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.258633);
+    border-radius: 28px;
+  }
+  .register:hover{
+    cursor: pointer;
+    background: #E880E8;
+  }
+  .footer {
+    align-self: flex-end;
+    gap: 16px;
+  }
+  .text {
+    padding: 0;
+  }
+  .allin {
+    align-items: flex-start;
+    padding-left: 59px;
+    padding-top: 60px;
+  }
+  .socmedia{
+    padding-right: 40px;
+    justify-content: flex-end;
+  }
+.fb:hover{
+  cursor: pointer;
+}
+.tw:hover{
+  cursor: pointer;
+}
+.insta:hover{
+  cursor: pointer;
+}
+}
